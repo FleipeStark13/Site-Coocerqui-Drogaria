@@ -1,0 +1,12 @@
+.response-faq {
+	display: none;
+}
+.fa {
+	transition: 0.5s;
+}
+.fa.active {
+	transform: rotate(180deg);
+}
+.fa.deactived {
+	transform: rotate(0);
+}

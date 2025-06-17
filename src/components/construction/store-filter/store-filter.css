@@ -1,0 +1,168 @@
+
+.store-list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    justify-content: center;
+    gap: 1em;
+}
+.store-card {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.store-head figure {
+    width: 100%;
+    margin: 0;
+    border-radius: 5px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+}
+.store-card figure img {
+    width: 100%;
+    border-radius: inherit;
+}
+.store-list h2 {
+    margin: 0;
+}
+.store-list p {
+    color: #ccc;
+}
+.buttons {
+    display: flex;
+    gap: 5px;
+}
+.buttons button:hover {
+    cursor: pointer;
+}
+.store-list li {
+    list-style: none;
+}
+.buttons a {
+    width: 100%;
+}
+.store-list button {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+.store-list button:hover {
+    transform: scale(1.02);
+    background-color: rgb(0, 95, 0);
+}
+.store-list li:hover {
+    transform: scale(1.02);
+}
+.store-property ul {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    padding: 0;
+}
+.store-property li {
+    padding: 2px 12px;
+    display: flex;
+    border-radius: 3px;
+}
+#delivery {
+    background-color: rgb(255, 204, 36);
+    color: rgb(164, 132, 16);
+}
+#interna {
+    background-color: rgb(5, 183, 8);
+    color: rgb(6, 95, 21);
+}
+#externa {
+    background-color: rgb(255, 106, 0);
+    color: rgb(107, 44, 2);
+}
+
+.store-content {
+    margin-top: 1em;
+}
+
+.store-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.store-contact li {
+    display: flex;
+    padding: 0 20px;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+.store-list h2 {
+    font-size: 20px;
+}
+.store-list p {
+    font-size: 12px;
+    color: gray;
+}
+.store-contact li p {
+    margin: 5px;
+}
+.contact-card figure {
+    width: 100px;
+    padding: 0;
+    background-color: #ccc;
+}
+.contact-content {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.fixo, .delivery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px
+}
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%; /* Ocupa o máximo possível da div pai */
+    box-sizing: border-box;
+}
+
+.input-icon input,
+.input-icon select {
+    width: 100%;
+    padding: 8px 30px 8px 8px; /* padding direito para acomodar o ícone */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+.input-icon i {
+    position: absolute;
+    right: 10px; /* Alinhado à direita */
+    color: #555;
+    pointer-events: none;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.filter {
+    display: flex;
+    gap: 1em;
+}
+
+.filter-icons {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+}
