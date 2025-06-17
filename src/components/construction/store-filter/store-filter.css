@@ -43,14 +43,26 @@
 }
 .buttons a {
     width: 100%;
+    text-decoration: none;
+    
 }
+
 .store-list button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     width: 100%;
     font-size: 15px;
     padding: 10px 5px;
     border: none;
     border-radius: 5px;
     background-color: green;
+    color: white;
+}
+
+.store-list button p {
+    font-weight: 900;
     color: white;
 }
 
@@ -74,12 +86,16 @@
     border-radius: 3px;
 }
 #delivery {
-    background-color: rgb(255, 204, 36);
-    color: rgb(164, 132, 16);
+    background-color: rgb(37, 255, 41);
+    color: rgb(0, 185, 31);
 }
 #interna {
     background-color: rgb(5, 183, 8);
     color: rgb(6, 95, 21);
+}
+#no-delivery {
+    background-color: rgb(107, 1, 1);
+    color: rgb(255, 255, 255);
 }
 #externa {
     background-color: rgb(255, 106, 0);
@@ -89,6 +105,7 @@
 .store-content {
     margin-top: 1em;
 }
+
 
 .store-contact {
     display: flex;
@@ -104,8 +121,27 @@
 .store-list h2 {
     font-size: 20px;
 }
+
+.store-filter-text-content {
+    text-align: center;
+}
+.store-filter-text-content h1 {
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 45px;
+    color: #181818;
+    width: 60%;
+}
+.store-filter-text-content p {
+    font-size: 20px;
+    color: #555;
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 70%;
+}
+
 .store-list p {
-    font-size: 12px;
+    font-size: 10px;
     color: gray;
 }
 .store-contact li p {
@@ -157,6 +193,7 @@
 }
 
 .filter {
+    margin-top: 5em;
     display: flex;
     gap: 1em;
 }
@@ -165,4 +202,16 @@
     display: flex;
     gap: 1em;
     width: 100%;
+}
+
+
+@media screen and (max-width: 920px) {
+	.store-filter-text-content h1 {
+        font-size: 45px;
+        width: 100%;
+    }
+	.store-filter-text-content p {
+        font-size: 15px;
+        width: 100%;
+    }
 }

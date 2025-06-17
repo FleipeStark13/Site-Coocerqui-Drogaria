@@ -1,23 +1,41 @@
+import './mensalTabloide.css'
 export default function MensalTabloide () {
+
+	const texts = {
+		title: "Um mês dos namorados único!",
+		subtitle: "Acompanhe nosso tabloide mensal:",
+		description: "O mês dos namorados chegou! Aqui na Coocerqui Drogaria a gente preparou as melhores ofertas para você, vem só conferir o nosso tabloide mensal, especial dos namorados."
+	}
+
+	const tabloideImgLinks = {
+		page_1: "https://mkt.coocerqui.com.br/public/drogaria/tabloide_mensal/imgs/1.png",
+		page_2: "https://mkt.coocerqui.com.br/public/drogaria/tabloide_mensal/imgs/2.png",
+		page_3: "https://mkt.coocerqui.com.br/public/drogaria/tabloide_mensal/imgs/3.png",
+	}
+
 	return (
 		<div className="flex-tabloide">
 			<div className="left-tabloide">
-				<h1>Um mês dos namorados único</h1>
-				<h2>Acompanhe nosso tabloide mensal:</h2>
-				<p>O mês dos namorados está chegando e aqui na Coocerqui Drogaria a gente prepara as melhores ofertas pra você!</p>
+				<h1>{texts.title}</h1>
+				<h2>{texts.subtitle}</h2>
+				<p>{texts.description}</p>
 
 				<button>
-					<a href="https://mkt.coocerqui.com.br/drogaria/tabloide_mensal">QUERO VER AS OFERTAS</a>
+					<a target='_blank' href="https://mkt.coocerqui.com.br/drogaria/tabloide_mensal">QUERO VER AS OFERTAS</a>
 					<i className="fa fa-search"></i>
 				</button>
 
 			</div>
 			<div className="right-tabloide">
-				<ul>
-					<figure>
-						<img src="https://mkt.coocerqui.com.br/public/drogaria/tabloide_mensal/imgs/1.png" alt="" />
-					</figure>
-				</ul>
+				<figure>
+					<img src={tabloideImgLinks.page_1} alt="" />
+				</figure>
+				<figure>
+					<img src={tabloideImgLinks.page_2} alt="" />
+				</figure>
+				<figure>
+					<img src={tabloideImgLinks.page_3} alt="" />
+				</figure>
 			</div>
 		</div>
 	)

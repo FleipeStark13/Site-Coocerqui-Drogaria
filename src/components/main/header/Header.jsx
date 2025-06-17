@@ -1,5 +1,9 @@
 import logo from '../../../imgs/header-logo.png';
 import './header.css'
+
+import { Outlet, Link } from "react-router-dom";
+
+
 export default function Header() {
 	return (
 		<header className='header'>
@@ -9,13 +13,16 @@ export default function Header() {
 				</figure>
 				<ul>
 					<li>
-						<a href="#">Nossas Lojas</a>
+						<a href="#stores">Nossas Lojas</a>
 					</li>
 					<li>
-						<a href="#">Entre em contato</a>
+						<a href="#sac">Entre em contato</a>
 					</li>
 				</ul>
 			</nav>
+
+			<Outlet />
+			
 		</header>
 	)
 }

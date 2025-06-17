@@ -1,6 +1,21 @@
-import { useEffect } from "react";
 import './store-filter.css';
-export default function StoreFilter() {
+
+import img_brasil from './store-imgs/brasil.png';
+import img_sanJuan from './store-imgs/san-juan.png';
+import img_assisMadeira from './store-imgs/assis-madeira.png';
+import img_armandoSalles from './store-imgs/armando-salles.png';
+import img_costaMagueta from './store-imgs/costa-magueta.png';
+import img_joaoPilon from './store-imgs/joao-pilon.png';
+import img_joaquimTrujillo from './store-imgs/joaquim-trujillo.jpg';
+import img_pereiraIgnacio from './store-imgs/pereira-ignacio.png';
+
+import { useEffect } from 'react';
+
+import { FaWhatsapp } from 'react-icons/fa';
+import { FaPhone } from 'react-icons/fa';
+
+
+export default function StoreFilter () {
 	useEffect(() => {
 		const searchInput = document.querySelector("#searchInput")
 		const cityFilter = document.querySelector("#cityFilter")
@@ -40,13 +55,98 @@ export default function StoreFilter() {
 		typeFilter.removeEventListener("change", filterStores)
 		}
 	}, [])
+
+
+	const stores = [
+		{
+			image_address: img_brasil,
+			name: "Coocerqui Drogaria Brasil",
+			delivery: false,
+			intern: true,
+			address: "Av. Brasil, 469 - Centro - Cerquilho - SP.18520-085",
+			contact_label: "(15) 99813-9992",
+			button_whatsapp: "https://wa.me/5515998139992?text=Olá",
+			button_tellphone: "+551599813992"
+		},
+		{
+			image_address: img_sanJuan,
+			name: "Coocerqui Drogaria San Juan",
+			delivery: false,
+			intern: true,
+			address: "Av. Dr. Alberto San Juan, 400 - Jardim Baccili - Tietê - SP.18530-000",
+			contact_label: "(15) 99181-5544",
+			button_whatsapp: "https://wa.me/5515991815544?text=Ol%C3%A1",
+			button_tellphone: "+5515991815544"
+		},
+		{
+			image_address: img_assisMadeira,
+			name: "Coocerqui Drogaria Assis Madeira",
+			delivery: true,
+			intern: false,
+			address: "Rua Prof. Francisco de Assis Madeira, 560 - Tietê - SP.18530-000",
+			contact_label: "(15) 99753-5897",
+			button_whatsapp: "https://wa.me/5515997535897?text=Ol%C3%A1",
+			button_tellphone: "+5515997535897"
+		},
+		{
+			image_address: img_armandoSalles,
+			name: "Coocerqui Drogaria Armando Salles",
+			delivery: true,
+			intern: false,
+			address: "Av. Armando Salles de Oliveira, 791- Jardim Santa Eliza, Porto Feliz - SP.18542-260",
+			contact_label: "(15) 99762-8210",
+			button_whatsapp: "https://wa.me/5515997628210?text=Ol%C3%A1",
+			button_tellphone: "+5515997628210"
+		},
+		{
+			image_address: img_costaMagueta,
+			name: "Coocerqui Drogaria Costa Magueta",
+			delivery: true,
+			intern: false,
+			address: "Rua Antônio Costa Magueta, 21- Cerquilho -SP - CEP 18520-015",
+			contact_label: "(15) 99750-0012",
+			button_whatsapp: "https://wa.me/5515997500012?text=Ol%C3%A1",
+			button_tellphone: "+5515997500012"
+		},
+		{
+			image_address: img_joaoPilon,
+			name: "Coocerqui Drogaria João Pilon",
+			delivery: false,
+			intern: true,
+			address: "Av. João Pilon, 1333 (Sala 1) - Nosso Teto - Cerquilho - SP.18527-000",
+			contact_label: "(15) 99738-4006",
+			button_whatsapp: "https://wa.me/5515997384006?text=Ol%C3%A1",
+			button_tellphone: "+5515997384006"
+		},
+		{
+			image_address: img_joaquimTrujillo,
+			name: "Coocerqui Drogaria Joaquim Trujillo",
+			delivery: true,
+			intern: true,
+			address: "Av. Joaquim Trujillo, 262 - Sala 01- Jardim Flamboyant, Boituva - SP.18550-770",
+			contact_label: "(15) 3263-8225",
+			button_whatsapp: "https://wa.me/551532638225?text=Ol%C3%A1",
+			button_tellphone: "+551532638225"
+		},
+		{
+			image_address: img_pereiraIgnacio,
+			name: "Coocerqui Drogaria Pereira Ignácio",
+			delivery: false,
+			intern: true,
+			address: "Av. Pereira Ignacio, 250 - Residencial Primo - Boituva - SP.18550-069",
+			contact_label: "(15) 99835-4443",
+			button_whatsapp: "https://wa.me/5515998354443?text=Ol%C3%A1",
+			button_tellphone: "+5515998354443"
+		},
+	]
+
 	return (
 		<div className="store-filter">
-			<h1>Encontre a Coocerqui Drogaria mais próxima de você!</h1>
-			<p>
-				Procure a drogaria mais próxima a você para que possa vir aproveitar os melhores
-				descontos nos produtos e oportunidades!
-			</p>
+
+			<div className="store-filter-text-content">
+				<h1>Encontre a Coocerqui Drogaria mais próxima de você!</h1>
+				<p>Aproveite os melhores descontos e oportunidades em medicamentos e produtos de saúde e bem-estar. Use nossa ferramenta de busca para encontrar a unidade ideal e cuide da sua saúde com economia e qualidade. Estamos te esperando!</p>
+			</div>
 
 			<div className="filter">
 				<div className="input-icon">
@@ -82,256 +182,51 @@ export default function StoreFilter() {
 				</div>
 			</div>
 
-            <ul className="store-list">
-                <li className="store-card">
-                    <div className="store-head">
-                        <figure id="store-img">
-                            <img src="https://www.coocerqui.com.br/upload/lojas/cache/620825752-loja-02-boituva-300x200-6f474b1b.png" alt=""/>
-                        </figure>
-                    </div>
-                    <div className="store-content">
-                        <div className="store-property">
-                            <ul>
-                                <li id="delivery">Delivery</li>
-                                <li id="interna">Interna</li>
-                            </ul>
-                        </div>
-                        <h2>Coocerqui Drogaria Brasil</h2>
-                        <p>Av. Brasil, 469 - Centro - Cerquilho - SP.18520-085</p>
-                        <p><strong>Contato:</strong> (15) 99813-9992</p>
-                    </div>
-                    <div className="buttons">
-                        <a href="https://wa.me/5515998139992?text=Olá">
-                            <button>
-                                WhatsApp
-                            </button>
-                        </a>
-                        <a href="tel:+551599813992" >
-                            <button>
-                                Ligar
-                            </button>
-                        </a>
-                    </div>
-                </li>
-                <li className="store-card">
-                    <div className="store-head">
-                        <figure id="store-img">
-                            <img src="https://www.coocerqui.com.br/upload/lojas/cache/1358130971-loja-04-cerquilho-nova-cerquilho-300x200-c2d1c24c.png" alt=""/>
-                        </figure>
-                    </div>
-                    
-                    <div className="store-content">
-                        <div className="store-property">
-                            <ul>
-                                <li id="delivery">Delivery</li>
-                                <li id="interna">Interna</li>
-                            </ul>
-                        </div>
-                        <h2>Coocerqui Drogaria Pereira Ignácio</h2>
-                        <p>Av. Pereira Ignacio, 250 - Residencial Primo - Boituva - SP.18550-069</p>
-                        <p><strong>Contato: </strong>(15) 99835-4443</p>
-                    </div>
-                    <div className="buttons">
-                        <a href="https://wa.me/5515998354443?text=Olá">
-                            <button>
-                                WhatsApp
-                            </button>
-                        </a>
-                        <a href="tel:+5515998354443" >
-                            <button>
-                                Ligar
-                            </button>
-                        </a>
-                    </div>
-                </li>
-                <li className="store-card">
-                    <div className="store-head">
-                        <figure id="store-img">
-                            <img src="https://www.coocerqui.com.br/upload/lojas/cache/1282094291-drogaria-boituva-300x200-03d35409.png" alt=""/>
-                        </figure>
-                    </div>
-                    
-                    <div className="store-content">
-                        <div className="store-property">
-                            <ul>
-                                <li id="delivery">Delivery</li>
-                                <li id="interna">Interna</li>
-                            </ul>
-                        </div>
-                        <h2>Coocerqui Drogaria San Juan</h2>
-                        <p>Av. Dr. Alberto San Juan, 400 - Jardim Baccili - Tietê - SP.18530-000</p>
-                        <p><strong>Contato:</strong> (15) 99181-5544</p>
-                    </div>
-                    <div className="buttons">
-                        <a href="https://wa.me/5515991815544?text=Olá">
-                            <button>
-                                WhatsApp
-                            </button>
-                        </a>
-                        <a href="tel:+5515991815544" >
-                            <button>
-                                Ligar
-                            </button>
-                        </a>
-                    </div>
-                </li>
-                <li className="store-card">
-                    <div className="store-head">
-                        <figure id="store-img">
-                            <img src="https://www.coocerqui.com.br/upload/lojas/cache/589320388-tiete-coocerqui-drogaria-assis-madeira-300x200-dec2ef59.png" alt=""/>
-                        </figure>
-                    </div>
-                    
-                    <div className="store-content">
-                        <div className="store-property">
-                            <ul>
-                                <li id="delivery">Delivery</li>
-                                <li id="externa">Externa</li>
-                            </ul>
-                        </div>
-                        <h2>Coocerqui Drogaria Assis Madeira</h2>
-                        <p>Rua Prof. Francisco de Assis Madeira, 560 - Tietê - SP.18530-000</p>
-                        <p><strong>Contato:</strong> (15) 99753-5897</p>
-                    </div>
-                    <div className="buttons">
-                        <a href="https://wa.me/5515997535897?text=Olá">
-                            <button>
-                                WhatsApp
-                            </button>
-                        </a>
-                        <a href="tel:+5515997535897" >
-                            <button>
-                                Ligar
-                            </button>
-                        </a>
-                    </div>
-                </li>
-                <li className="store-card">
-                    <div className="store-head">
-                        <figure id="store-img">
-                            <img src="https://www.coocerqui.com.br/upload/lojas/cache/324795641-drogaria-coocerqui-joao-pilon-300x200-f6ace807.png" alt=""/>
-                        </figure>
-                    </div>
-                    
-                    <div className="store-content">
-                        <div className="store-property">
-                            <ul>
-                                <li id="delivery">Delivery</li>
-                                <li id="interna">Interna</li>
-                            </ul>
-                        </div>
-                        <h2>Coocerqui Drogaria João Pilon</h2>
-                        <p>Av. João Pilon, 1333 (Sala 1) - Nosso Teto - Cerquilho - SP.18527-000</p>
-                        <p><strong>Contato: </strong>(15) 99738-4006</p>
-                    </div>
-                    <div className="buttons">
-                        <a href="https://wa.me/5515997384006?text=Olá">
-                            <button>
-                                WhatsApp
-                            </button>
-                        </a>
-                        <a href="tel:+5515997384006" >
-                            <button>
-                                Ligar
-                            </button>
-                        </a>
-                    </div>
-                </li>
-                <li className="store-card">
-                    <div className="store-head">
-                        <figure id="store-img">
-                            <img src="https://www.coocerqui.com.br/upload/lojas/cache/235326641-drogaria-coocerqui-armando-salles-300x200-b7d64ee9.png" alt=""/>
-                        </figure>
-                    </div>
-                    
-                    <div className="store-content">
-                        <div className="store-property">
-                            <ul>
-                                <li id="delivery">Delivery</li>
-                                <li id="interna">Interna</li>
-                            </ul>
-                        </div>
-                        <h2>Coocerqui Drogaria Armando Salles</h2>
-                        <p>Av. Armando Salles de Oliveira, 791- Jardim Santa Eliza, Porto Feliz - SP.18542-260</p>
-                        <p><strong>Contato: </strong>(15) 99762-8210</p>
-                    </div>
-                    <div className="buttons">
-                        <a href="https://wa.me/5515997628210?text=Olá">
-                            <button>
-                                WhatsApp
-                            </button>
-                        </a>
-                        <a href="tel:+5515997628210" >
-                            <button>
-                                Ligar
-                            </button>
-                        </a>
-                    </div>
-                </li>
-                <li className="store-card">
-                    <div className="store-head">
-                        <figure id="store-img">
-                            <img src="https://www.coocerqui.com.br/upload/lojas/cache/1620707293-cerquilho-coocerqui-drogaria-costa-magueta-300x200-3db33b43.png" alt=""/>
-                        </figure>
-                    </div>
-                    
-                    <div className="store-content">
-                        <div className="store-property">
-                            <ul>
-                                <li id="delivery">Delivery</li>
-                                <li id="externa">Externa</li>
-                            </ul>
-                        </div>
-                        <h2>Coocerqui Drogaria Costa Magueta</h2>
-                        <p>Rua Antônio Costa Magueta, 21- Cerquilho -SP - CEP 18520-015</p>
-                        <p><strong>Contato: </strong>(15) 99750-0012</p>
-                    </div>
-                    <div className="buttons">
-                        <a href="https://wa.me/5515997500012?text=Olá">
-                            <button>
-                                WhatsApp
-                            </button>
-                        </a>
-                        <a href="tel:+5515997500012" >
-                            <button>
-                                Ligar
-                            </button>
-                        </a>
-                    </div>
-                </li>
-                <li className="store-card">
-                    <div className="store-head">
-                        <figure id="store-img">
-                            <img src="https://www.coocerqui.com.br/upload/lojas/cache/1155037678-drogaria-coocerqui-joaquim-trujillo-300x200-2dfb7e74.jpg" alt=""/>
-                        </figure>
-                    </div>
-                    
-                    <div className="store-content">
-                        <div className="store-property">
-                            <ul>
-                                <li id="delivery">Delivery</li>
-                                <li id="interna">Interna</li>
-                            </ul>
-                        </div>
-                        <h2>Coocerqui Drogaria Joaquim Trujillo</h2>
-                        <p>Av. Joaquim Trujillo, 262 - Sala 01- Jardim Flamboyant, Boituva - SP.18550-770</p>
-                        <p><strong>Contato: </strong>(15) 3263-8225</p>
-                    </div>
-                    <div className="buttons">
-                        <a href="https://wa.me/551532638225?text=Olá">
-                            <button>
-                                WhatsApp
-                            </button>
-                        </a>
-                        <a href="tel:+551532638225" >
-                            <button>
-                                Ligar
-                            </button>
-                        </a>
-                    </div>
-                </li>
-            </ul>
+
+			<ul className="store-list">
+				{stores.map(store => {
+					return (
+						<li className="store-card">
+							<div className="store-head">
+								<figure id="store-img">
+									<img src={store.image_address} alt="Imagem Drogaria" />
+								</figure>
+							</div>
+							<div className="store-content">
+								<div className="store-property">
+									<ul>
+										{ store.delivery ? <li id="delivery">Delivery</li> : <li id='no-delivery'>Sem Delivery</li> }
+										{ store.intern ? <li id="interna">Interna</li> : <li id="externa">Externa</li> }
+									</ul>
+								</div>
+								<h2>{store.name}</h2>
+								<p>{store.address}</p>
+								<p>
+									<strong>Contato:</strong>
+									{store.contact_label}
+								</p>
+							</div>
+							<div className="buttons">
+								<a target='_blank' href={store.button_whatsapp}>
+									<button>
+										<FaWhatsapp />
+										<p>WhatsApp</p>
+									</button>
+								</a>
+								<a target='_blank' href={`tel:${store.button_tellphone}`} >
+									<button>
+										<FaPhone />
+										<p>Telefone</p>
+									</button>
+								</a>
+							</div>
+						</li>
+					)
+				})}
+			</ul>
 
 		</div>
+
+
 	)
 }

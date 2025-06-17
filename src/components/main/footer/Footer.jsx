@@ -1,4 +1,5 @@
-import logo from '../../../imgs/header-logo.png'
+import logo from '../../../imgs/header-logo.png';
+import './footer.css'
 export default function Footer () {
 	return (
 		<footer>
@@ -9,23 +10,20 @@ export default function Footer () {
 					</figure>
 				</div>
 				<div>
-					<ul>
-						<a href="#">Nossas Lojas</a>
-						<a href="#">Fale Conosco</a>
-						<a href="#">Tabloide Mensal</a>
+					<ul className='links-footer'>
+						<a href="#stores">Nossas Lojas</a>
+						<a href="#sac">Fale Conosco</a>
+						<a href="#tabloide-mensal">Tabloide Mensal</a>
 					</ul>
 				</div>
 				<div>
 					<p>Siga a Coocerqui:</p>
-					<ul>
-						<a href="#">
+					<ul className='social-medias-footer'>
+						<a href="https://www.facebook.com/coocerqui.oficial/">
 							<i className='fa fa-facebook-square' />
 						</a>
-						<a href="#">
+						<a href="https://www.instagram.com/coocerqui.oficial/">
 							<i className='fa fa-instagram' />
-						</a>
-						<a href="#">
-							<i className='fa fa-whatsapp' />
 						</a>
 					</ul>
 				</div>

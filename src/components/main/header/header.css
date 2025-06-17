@@ -31,3 +31,10 @@
 	color: #202020;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+
+
+@media screen and (max-width: 920px) {
+	.header nav ul {
+		display: none;
+	}
+}

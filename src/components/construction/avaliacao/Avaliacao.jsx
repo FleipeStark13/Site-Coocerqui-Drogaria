@@ -4,9 +4,11 @@ import depoimento_3 from '../../../imgs/depoimentos/Screenshot_3.png';
 import depoimento_4 from '../../../imgs/depoimentos/Screenshot_4.png';
 import depoimento_5 from '../../../imgs/depoimentos/Screenshot_5.png';
 
+import './avaliacao.css'
+
 export default function Avaliacao() {
 	return (
-		<div className="avalicao">
+		<div className="avaliacao">
 			<h1>Você vai ficar de fora?</h1>
 			<p>Veja o que os Cooperados estão falando sore a Coocerqui Drogaria!</p>
 
