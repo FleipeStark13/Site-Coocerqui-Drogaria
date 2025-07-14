@@ -2,7 +2,7 @@
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/fleipekkj.md)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/felipe-de-jesus-alves-liandro-415890222/)
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FleipeStark13)
-[![Website](https://img.shields.io/badge/Website-00AEEF?style=for-the-badge&logo=web&logoColor=white)](https://feliepliandro.com.br)
+[![Website](https://img.shields.io/badge/Website-00AEEF?style=for-the-badge&logo=web&logoColor=white)](https://felipeliandro.com.br)
 
 <img width="1710" height="969" alt="image" src="https://github.com/user-attachments/assets/4e78df8d-9fce-4897-9a77-917290a8a7da" />
 <img width="1710" height="969" alt="image" src="https://github.com/user-attachments/assets/3a2b64d4-9170-4ed1-a045-0d5811a1749d" />
@@ -74,5 +74,5 @@ Embora o site esteja funcional, sugestões são bem‑vindas:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/fleipekkj.md)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/felipe-de-jesus-alves-liandro-415890222/)
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FleipeStark13)
-[![Website](https://img.shields.io/badge/Website-00AEEF?style=for-the-badge&logo=web&logoColor=white)](https://feliepliandro.com.br)
+[![Website](https://img.shields.io/badge/Website-00AEEF?style=for-the-badge&logo=web&logoColor=white)](https://felipeliandro.com.br)
 
