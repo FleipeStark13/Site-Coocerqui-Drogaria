@@ -1,0 +1,39 @@
+.topComponents ul {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+.topComponent {
+	width: 65px;
+	height: 65px;
+	background-color: #28BA39;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.topComponent svg {
+	font-size: 30px;
+}
+
+.topComponent:hover {
+	transform: scale(1.05);
+	background-color: #1e8f2b;
+}
+.topComponent:active {
+	transform: scale(0.95);
+	opacity: .5;
+}
+
+.topComponent:nth-child(2) svg {
+	font-size: 20px;
+}
+.topComponent:nth-child(2) {
+	width: 55px;
+	height: 55px;
+	margin: 0 auto;
+}

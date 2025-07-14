@@ -2,7 +2,7 @@
   "name": "minha-loja",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mkt.coocerqui.com.br/drogaria/tst_new_site",
+  "homepage": "https://mkt.coocerqui.com.br/drogaria",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -11,7 +11,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -40,5 +40,16 @@
   },
   "devDependencies": {
     "react-router-dom": "^7.6.2"
+  },
+  "description": "Veja como está o projeto no figma:\r <iframe style=\"border: 1px solid rgba(0, 0, 0, 0.1);\" width=\"800\" height=\"450\" src=\"https://embed.figma.com/design/3rTJsoPwOlC1JAwMUOPeQc/Site-Coocerqui-Drogaria?node-id=0-1&embed-host=share\" allowfullscreen></iframe>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FleipeStark13/Site-Coocerqui-Drogaria.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FleipeStark13/Site-Coocerqui-Drogaria/issues"
   }
 }

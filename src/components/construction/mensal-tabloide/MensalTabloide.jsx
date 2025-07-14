@@ -8,9 +8,9 @@ export default function MensalTabloide () {
 	}
 
 	const tabloideImgLinks = {
-		page_1: "https://mkt.coocerqui.com.br/public/drogaria/tabloide_mensal/imgs/1.png",
-		page_2: "https://mkt.coocerqui.com.br/public/drogaria/tabloide_mensal/imgs/2.png",
-		page_3: "https://mkt.coocerqui.com.br/public/drogaria/tabloide_mensal/imgs/3.png",
+		page_1: "https://mkt.coocerqui.com.br/public/drogaria/tabloide_mensal/imgs/1.jpg",
+		page_2: "https://mkt.coocerqui.com.br/public/drogaria/tabloide_mensal/imgs/2.jpg",
+		page_3: "https://mkt.coocerqui.com.br/public/drogaria/tabloide_mensal/imgs/3.jpg",
 	}
 
 	return (

@@ -2,7 +2,9 @@
 	width: 100%;
 	position: relative;
 }
+
 .hero-banner figure, .hero-banner picture{
+	cursor: pointer;
 	max-width: 1520px;
 	border-radius: 20px;
 	display: flex;
@@ -11,6 +13,11 @@
 	margin: 0 auto;
 	border: 1px solid #ececec;
 }
+
+.hero-banner figure:hover {
+	transform: scale(1.01);
+}
+
 .hero-banner img {
 	width: 100%;
 	border-radius: inherit;
