@@ -121,6 +121,9 @@
 	.left-tabloide button {
 		width: 320px;
 		margin: 20px;
+		margin: 0 auto;
+		margin-top: 2em;
+		margin-bottom: 2em;
 		font-size: 15px;
 	}
 	.right-tabloide figure {

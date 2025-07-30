@@ -2,9 +2,9 @@ import './mensalTabloide.css'
 export default function MensalTabloide () {
 
 	const texts = {
-		title: "Um mês dos namorados único!",
+		title: "Para aquecer seu inverno!",
 		subtitle: "Acompanhe nosso tabloide mensal:",
-		description: "O mês dos namorados chegou! Aqui na Coocerqui Drogaria a gente preparou as melhores ofertas para você, vem só conferir o nosso tabloide mensal, especial dos namorados."
+		description: "Julho chegou! Aqui na Coocerqui Drogaria a gente preparou as melhores ofertas de inverno pra você aproveitar, vem só conferir o nosso tabloide mensal, especial de inverno."
 	}
 
 	const tabloideImgLinks = {
